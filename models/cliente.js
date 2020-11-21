@@ -15,7 +15,9 @@ var cliente = new Schema({
     GEB: { type: Number },
     ETA: { type: Number },
     Fecha_Creacion: { type: String },
-    Fecha_Actualizacion: { type: String }
+    Fecha_Actualizacion: { type: String },
+    Cve_Error: {type: Number},
+    Cve_Mensaje: {type: String}
 });
 
 module.exports = mongoose.model('Cliente', cliente);

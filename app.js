@@ -27,6 +27,8 @@ router.route('/cliente/:id')
 .get(ClienteCtrl.findById)
 //.put(ClienteCtrl.updatecliente)
 
+app.use(router);
+
 app.use('/api', cliente);
 
 
